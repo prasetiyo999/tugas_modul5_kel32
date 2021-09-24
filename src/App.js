@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import Useeffect from "./Useeffect/Effect";
+import Usecontext from "./Usecontext/Context";
 
 export default function App( ) {
     return (
@@ -12,13 +12,13 @@ export default function App( ) {
             </div>
             <nav>
                 <Link className="text" to="/">
-                useEffect 
+                All Rights Belong to Their Respective Owners
                 </Link>
             </nav>
         </header>
 
         <Switch>
-            <Route path="/" exact component={Useeffect} />
+            <Route path="/" exact component={Usecontext} />
         </Switch>
         </BrowserRouter>
     );
